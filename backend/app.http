@@ -1,0 +1,24 @@
+POST http://localhost:5000/create
+Content-Type: application/json
+
+{
+  "title": "Review PRs",
+  "description": "Review pending pull requests on GitHub",
+  "status": "in_progress",
+  "dueDate": "2025-06-22"
+}
+
+###
+GET http://localhost:5000/
+Content-Type: application/json
+
+###
+PUT http://localhost:5000/update/d880a811-e6bf-46a7-b3b4-247b9f841d15
+Content-Type: application/json
+
+{
+  "title": "Finish assignment (Updated)",
+  "description": "Complete project with full CRUD functionality",
+  "status": "in_progress",
+  "dueDate": "2025-06-26"
+}
